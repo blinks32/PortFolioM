@@ -165,9 +165,9 @@ ion-footer {
 
 #contact {
   .ion-card {
-   // width: 90%; // Set the card width to 90% of the viewport width
-   // max-width: 400px; // Set a maximum width for the card
-    margin-top: 20%; // Center the card horizontally on the page
+    width: 100%; // Ensure the card takes the full width
+    max-width: 90%; // Set a maximum width for large screens
+    margin: 20px auto; // Center the card horizontally and add margin
 
     ion-card-content {
       display: flex;
@@ -175,25 +175,26 @@ ion-footer {
       align-items: center;
 
       form {
-        width: 100%; // Set the form width to 100% of the card width
+        width: 100%; // Set the form width to fill the card
+        max-width: 400px; // Optional: limit form width on larger screens for better aesthetics
 
         ion-item {
-          width: 100%; // Set the input fields width to 100% of the form width
-          margin-bottom: 20px; // Add margin bottom to the input fields
+          width: 100%; // Ensure input fields fill the form width
+          margin-bottom: 15px; // Reduce the margin bottom for better compactness
         }
 
         ion-button[type="submit"] {
-          width: 100%; // Set the button width to 100% of the form width
-          margin-top: 20px; // Add margin top to the submit button
+          width: 100%; // Ensure submit button fills the form width
+          margin-top: 10px; // Reduce margin top for a more compact layout
         }
       }
 
       .contact-details {
         text-align: center;
-        margin-top: 20px; // Add margin top to the contact details
+        margin-top: 20px; // Add spacing between the form and contact details
 
         p {
-          margin: 5px 0; // Adjust paragraph margins
+          margin: 5px 0; // Maintain paragraph spacing
         }
       }
     }
@@ -202,10 +203,16 @@ ion-footer {
   // Media query for smaller screens
   @media only screen and (max-width: 768px) {
     .ion-card {
-      width: 100%; // Set the card width to 100% of the viewport width for smaller screens
+      width: 90%; // Allow the card to take 90% of the viewport width
+      margin: 10px auto; // Center and reduce margin
+    }
+
+    form {
+      width: 100%; // Ensure form takes full width on smaller screens
     }
   }
 }
+
 
 
 
