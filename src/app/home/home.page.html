@@ -1,0 +1,219 @@
+
+
+<ion-content [fullscreen]="true">
+
+  <!-- Background Image Section -->
+  <section id="background" class="background-section">
+      <div class="background-image">
+        <img src="assets/imgs/ui.jpeg" alt="Profile Image">
+      </div>
+  </section>
+
+  <section id="about" class="section about">
+    <ion-card class="intro-card animated fadeInUp">
+      <ion-card-header>
+        <!-- Circular Profile Image Placeholder -->
+        <ion-avatar class="profile-image">
+          <img src="assets/imgs/pic.jpeg" alt="Profile Image">
+        </ion-avatar>
+        <ion-card-title class="ion-text-center">Etoamaihe Chinedu</ion-card-title>
+       
+      
+      </ion-card-header>
+      
+      <ion-card-content>
+        <p>I'm A Self Taught, Passionate Full Stack Game Developer with up to 8 years experience. I have worked on so many projects, below are a few projects I'm currently managing.</p>
+      </ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button expand="block" shape="round" class="centered-button" href="https://www.linkedin.com/in/chinedu-etoamaihe-a041a6105/" target="_blank">
+              <ion-icon slot="icon-only" name="logo-linkedin"></ion-icon>
+              LinkedIn
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button expand="block" shape="round" class="centered-button" href="https://github.com/blinks32" target="_blank">
+              <ion-icon slot="icon-only" name="logo-github"></ion-icon>
+              Github
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button expand="block" shape="round" class="centered-button" href="https://twitter.com/documentMe_" target="_blank">
+              <ion-icon slot="icon-only" name="logo-twitter"></ion-icon>
+              Twitter
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button expand="block" shape="round" class="centered-button" (click)="scrollToBottom()" target="_blank">
+              <ion-icon slot="icon-only" name="mail"></ion-icon>
+              Contact
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    
+  </section>
+  
+  <div id="portfolio-toolbar">
+    <ion-title>Projects</ion-title>
+  </div>
+  
+
+  <section id="projects" class="section projects">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+      <ion-card animated fadeInUp class="project-card animated fadeInLeft">
+          <img src="https://pbs.twimg.com/profile_images/1664599707027488770/mnC6E6TL_400x400.jpg" alt="Project Image">
+          <ion-card-header>
+              <ion-card-title>Personal Project</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+              <p>A simple 3d running game with a twist, here the player uses power ups to defeat their opponent.</p>
+              <ion-button expand="block" shape="round" (click)="gotoProfile()">View Project</ion-button>
+              <ion-button expand="block" shape="round" href="https://twitter.com/documentMe_" target="_blank">View Project on X</ion-button>
+          </ion-card-content>
+      </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card animated fadeInUp class="project-card animated fadeInLeft">
+              <img src="https://releases-cdn.legendsoflearning.com/legends/image/upload/c_fill,g_auto:classic,h_300,w_300/dubfgji5jfemvbnunpnr" alt="Project Image">
+              <ion-card-header>
+                  <ion-card-title>Astro</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                  <p>Help the astronaut build an atom. Using an atom generator located in a distant part of space.</p>
+                  <ion-button expand="block" shape="round" href="https://app.legendsoflearning.com/game/astro/3248?partner=legends-developer&learning_objective_id=408">View Project</ion-button>
+              </ion-card-content>
+          </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card animated fadeInUp class="project-card animated fadeInLeft">
+                  <img src="https://releases-cdn.legendsoflearning.com/legends/image/upload/c_fill,g_auto:classic,h_300,w_300/qdpok67ue6ohik3p3pwm" alt="Project Image">
+                  <ion-card-header>
+                      <ion-card-title>Escape</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                      <p>Your city has been ravaged by earthquakes caused by plate tectonics. You must escape the disaster!</p>
+                      <ion-button expand="block" shape="round" href="https://app.legendsoflearning.com/game/escape/3309?partner=legends-developer&learning_objective_id=364">View Project</ion-button>
+                  </ion-card-content>
+              </ion-card>
+                </ion-col>
+                <ion-col>
+                  <ion-card animated fadeInUp class="project-card animated fadeInLeft">
+                      <img src="https://releases-cdn.legendsoflearning.com/legends/image/upload/c_fill,g_auto:classic,h_300,w_300/tdlm9y5dg3yyift3gdop" alt="Project Image">
+                      <ion-card-header>
+                          <ion-card-title>Rounding With Tom</ion-card-title>
+                      </ion-card-header>
+                      <ion-card-content>
+                          <p>During the game you help Tom find his friends while you learn how to round to any decimal place </p>
+                          <ion-button expand="block" shape="round" href="https://app.legendsoflearning.com/game/rounding-with-tom/3167?partner=legends-developer&learning_objective_id=1795">View Project</ion-button>
+                      </ion-card-content>
+                  </ion-card>
+                    </ion-col>
+      </ion-row>
+    </ion-grid>
+      <!-- Repeat this card structure for each project -->
+  </section>
+
+  <div id="portfolio-toolbar">
+    <ion-title>Skills</ion-title>
+  </div>
+
+  <section id="skills" class="section skills">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+      <ion-card class="skill-card animated fadeInUp">
+          <!-- <img src="https://unity-assetstorev2-prd.storage.googleapis.com/cdn-origin/assets/as/views/common/components/Logo/src/unity-assetstore-logo-2024.efb282090038049ebe0f4b442a7817bc.svg" alt="Skill Image"> -->
+          <ion-card-header>
+              <ion-card-title>Unity</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+              <p>Unity is A game development Engine</p>
+          </ion-card-content>
+      </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="skill-card animated fadeInUp">
+              <!-- <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1MmB8?ver=6c43g" alt="Skill Image"> -->
+              <ion-card-header>
+                  <ion-card-title>C#</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                  <p>C sharp is a programming language.</p>
+              </ion-card-content>
+          </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card class="skill-card animated fadeInUp">
+                  <!-- <img src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png" alt="Skill Image"> -->
+                  <ion-card-header>
+                      <ion-card-title>Firebase</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                      <p>platform for creating applications.</p>
+                  </ion-card-content>
+              </ion-card>
+                </ion-col>
+                <ion-col>
+                  <ion-card class="skill-card animated fadeInUp">
+                      <!-- <img src="https://via.placeholder.com/100" alt="Skill Image"> -->
+                      <ion-card-header>
+                          <ion-card-title>GIMP</ion-card-title>
+                      </ion-card-header>
+                      <ion-card-content>
+                          <p>free graphics editor used for image editing.</p>
+                      </ion-card-content>
+                  </ion-card>
+                    </ion-col>
+      </ion-row>
+    </ion-grid>
+      <!-- Repeat this card structure for each skill -->
+  </section>
+
+  <section id="contact" class="section contact">
+    <ion-card class="animated fadeInUp">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">Contact Me</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Contact Form -->
+        <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+          <ion-item>
+            <ion-label position="floating">Name</ion-label>
+            <ion-input formControlName="name" type="text" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input formControlName="email" type="email" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Message</ion-label>
+            <ion-textarea formControlName="message" required></ion-textarea>
+          </ion-item>
+          <ion-button type="submit" expand="block" size="large" shape="round" [disabled]="!contactForm.valid">Send Message</ion-button>
+        </form>
+        
+  
+        <!-- Contact Details -->
+        <div class="contact-details">
+          <ion-title class="ion-text-center">For inquiries, you can also reach me via email at:</ion-title>
+          <ion-title class="ion-text-center">Playstudio86@gmail.com</ion-title>
+          <ion-title class="ion-text-center">Or give me a call at:</ion-title>
+          <ion-title class="ion-text-center">+2347041684556</ion-title>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </section>
+  
+
+</ion-content>
+
+<!-- <ion-footer [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+      <ion-title>&copy; 2024 Your Name. All rights reserved.</ion-title>
+  </ion-toolbar>
+</ion-footer> -->

@@ -1,0 +1,221 @@
+ion-content {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+
+  #portfolio-toolbar { // An id to uniquely identify the toolbar for the portfolio
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    margin-top: 4%;
+    margin-bottom: 4%;
+
+
+    ion-title {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .profile-image {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border: 2px solid #fff; /* Optional: Add a border */
+    border-radius: 50%; /* Make it circular */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the margin auto works */
+  }
+
+  #background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    .background-image {
+      width: 100%;
+      height: 100%;
+      // background-image: url('https://ibb.co/tbr5MWh');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+    }
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+
+    ion-grid {
+      width: 100%;
+    }
+
+    ion-row {
+      display: flex;
+    }
+
+    ion-col {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      ion-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 10px;
+        border-radius: 10px;
+        flex: 1; // Ensures cards take all available space in the column
+
+        img {
+          width: 100%;
+          height: 200px; // Fixed height for all images
+          object-fit: cover;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+
+        ion-card-header {
+          flex: 0 1 auto;
+          background-color: #f2f2f2;
+          border-bottom: 2px solid #ddd;
+          width: 100%;
+
+          ion-card-title {
+            font-size: 1.5rem;
+            color: #333;
+            text-align: center;
+          }
+        }
+
+        ion-card-content {
+          flex: 1 0 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 20px;
+          width: 100%;
+
+          p {
+            font-size: 1rem;
+            color: #666;
+          }
+
+          ion-button {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    .intro-card {
+      margin-top: 10vh;
+      background: transparent;
+    }
+  }
+
+  .contact {
+    margin-bottom: 0;
+  }
+}
+
+ion-footer {
+  ion-toolbar {
+    ion-title {
+      font-size: 0.8rem;
+      color: #999;
+    }
+  }
+}
+
+.animated {
+  &.fadeInUp {
+    opacity: 0;
+    transform: translateY(0px);
+    animation: fadeInUp 1s ease forwards;
+  }
+}
+
+#about {
+  .intro-card {
+    ion-card-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .centered-button {
+      margin-top: 10px; // Adjust as needed
+    }
+  }
+}
+
+
+#contact {
+  .ion-card {
+    width: 90%; // Set the card width to 90% of the viewport width
+    max-width: 400px; // Set a maximum width for the card
+    margin-top: 20%; // Center the card horizontally on the page
+
+    ion-card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      form {
+        width: 100%; // Set the form width to 100% of the card width
+
+        ion-item {
+          width: 100%; // Set the input fields width to 100% of the form width
+          margin-bottom: 20px; // Add margin bottom to the input fields
+        }
+
+        ion-button[type="submit"] {
+          width: 100%; // Set the button width to 100% of the form width
+          margin-top: 20px; // Add margin top to the submit button
+        }
+      }
+
+      .contact-details {
+        text-align: center;
+        margin-top: 20px; // Add margin top to the contact details
+
+        p {
+          margin: 5px 0; // Adjust paragraph margins
+        }
+      }
+    }
+  }
+
+  // Media query for smaller screens
+  @media only screen and (max-width: 768px) {
+    .ion-card {
+      width: 100%; // Set the card width to 100% of the viewport width for smaller screens
+    }
+  }
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
